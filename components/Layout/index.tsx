@@ -3,6 +3,7 @@ import Image from 'next/image';
 import TwitterLogo from 'public/twitter.svg';
 import LinkedinLogo from 'public/linkedin.svg';
 import GithubLogo from 'public/github.svg';
+import GmailLogo from 'public/gmail.svg';
 
 type LayoutProps = {
     children: React.ReactNode;
@@ -18,7 +19,7 @@ export default function Layout({ children }: LayoutProps) {
             {children}
       </section>
       <footer className="flex gap-3 p-3 items-center justify-end">
-        <a className="text-2xl text-rose-500 tracking-wider" href='mailto:mtamilcse92@gmail.com'>Send email</a>
+        <a target="_blank" href='mailto:mtamilcse92@gmail.com' rel="noreferrer"><Image src={GmailLogo} width={42} height={42} alt="" /></a>
         <a target="_blank" href='https://twitter.com/tamil_92' rel="noreferrer"><Image src={TwitterLogo} width={42} height={42} alt="" /></a>
         <a target="_blank" href='https://www.linkedin.com/in/tamil-arasan-5722b6171/' rel="noreferrer"><Image src={LinkedinLogo} width={42} height={42} alt="" /></a>
         <a target="_blank" href='https://github.com/mtamilcse92' rel="noreferrer"><Image src={GithubLogo} width={42} height={42} alt="" /></a>

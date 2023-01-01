@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import ThemeToggle from 'components/ThemeToggle'
 
 export default function Home() {
 
@@ -11,19 +10,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col flex-1 p-48">
-       <label className='text-3xl text-zinc-800 dark:text-gray-50'>Hi there 👋</label>
-       <div className="flex items-end my-4">
-        <label className='text-7xl text-zinc-800 dark:text-gray-50 p-2'>I&apos;m</label>
-        <label className='text-9xl text-sky-500 dark:text-orange-500'>Tamil</label>
-        <label className='text-7xl text-zinc-800 dark:text-gray-50 p-2'>Arasan</label>
-       </div>
+      <main className="flex flex-col flex-1 sm:mt-10 md:p-48 p-10">
+       <label className='md:text-3xl text-1xl text-zinc-800 dark:text-gray-50'>Hi there 👋</label>
+       <section className="flex items-end my-4">
+        <label className='md:text-7xl text-4xl text-zinc-800 dark:text-gray-50 px-2 md:p-2'>I&apos;m</label>
+        <label className='md:text-9xl text-6xl text-sky-500 dark:text-orange-500'>Tamil</label>
+        <label className='md:text-7xl text-4xl text-zinc-800 dark:text-gray-50 px-2 md:p-2'>Arasan</label>
+       </section>
 
-       <ul className="list-disc my-2 text-zinc-800 dark:text-gray-50 p-2">
-          <li className='text-2xl tracking-wider my-3 px-2'>Had a good work experience in Web, Mobile and Backend 💪. Currently exploring 
+       <ul className="list-disc md:my-2 my-1 text-zinc-800 dark:text-gray-50 p-2">
+          <li className='md:text-2xl tracking-wider my-3 px-2'>Had a good work experience in Web, Mobile and Backend 💪. Currently exploring 
             <a className="text-blue-400 px-1" href='https://tauri.app/'>Tauri js</a> and 
             <a className="text-blue-400 px-1" href='https://www.rust-lang.org/'> Rust</a>.</li>
-          
+            <li className='md:text-2xl tracking-wider my-3 px-2'>Always Open to collaborate and pursue things for my next chapter.</li>
         </ul>
       </main>
     </>
