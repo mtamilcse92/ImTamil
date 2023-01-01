@@ -10,8 +10,8 @@ const nextConfig = {
     loader: "akamai",
     path: "public"
   },
-  basePath: '/imtamil',
-  assetPrefix: '/imtamil',
+  basePath: '/ImTamil',
+  assetPrefix: '/ImTamil',
 }
 
 module.exports = nextConfig
