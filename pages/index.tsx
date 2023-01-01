@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/m-key.png" />
       </Head>
-      <main className="flex flex-col flex-1 sm:mt-10 md:p-48 p-10">
+      <main className="flex flex-col md:flex-1 sm:mt-10 md:p-48 p-10">
        <label className='md:text-3xl text-1xl text-zinc-800 dark:text-gray-50'>Hi there 👋</label>
        <section className="flex items-end my-4">
         <label className='md:text-7xl text-4xl text-zinc-800 dark:text-gray-50 px-2 md:p-2'>I&apos;m</label>
@@ -19,7 +19,7 @@ export default function Home() {
        </section>
 
        <ul className="list-disc md:my-2 my-1 text-zinc-800 dark:text-gray-50 p-2">
-          <li className='md:text-2xl tracking-wider my-3 px-2'>Had a good work experience in Web, Mobile and Backend 💪. Currently exploring 
+          <li className='md:text-2xl tracking-wider my-3 px-2'>Have a good work experience in Web, Mobile and Backend 💪. Currently exploring 
             <a className="text-blue-400 px-1" href='https://tauri.app/'>Tauri js</a> and 
             <a className="text-blue-400 px-1" href='https://www.rust-lang.org/'> Rust</a>.</li>
             <li className='md:text-2xl tracking-wider my-3 px-2'>Always Open to collaborate and pursue things for my next chapter.</li>
