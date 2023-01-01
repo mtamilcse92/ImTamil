@@ -1,16 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import {useTheme} from 'next-themes'
-import { Inter } from '@next/font/google'
-import DarkModeToggle from "react-dark-mode-toggle"
-import styles from 'styles/Home.module.scss'
 import ThemeToggle from 'components/ThemeToggle'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
-const {theme, setTheme} = useTheme()
-const isDarkMode = theme === 'dark';
 
   return (
     <>
@@ -20,10 +11,20 @@ const isDarkMode = theme === 'dark';
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex p-3 bg-white dark:bg-zinc-900 flex-1 h-screen">
-        <div className='flex flex-1 justify-end items-start'>
-          <ThemeToggle />
-        </div>
+      <main className="flex flex-col flex-1 p-48">
+       <label className='text-3xl text-zinc-800 dark:text-gray-50'>Hi there 👋</label>
+       <div className="flex items-end my-4">
+        <label className='text-7xl text-zinc-800 dark:text-gray-50 p-2'>I&apos;m</label>
+        <label className='text-9xl text-sky-500 dark:text-orange-500'>Tamil</label>
+        <label className='text-7xl text-zinc-800 dark:text-gray-50 p-2'>Arasan</label>
+       </div>
+
+       <ul className="list-disc my-2 text-zinc-800 dark:text-gray-50 p-2">
+          <li className='text-2xl tracking-wider my-3 px-2'>Had a good work experience in Web, Mobile and Backend 💪. Currently exploring 
+            <a className="text-blue-400 px-1" href='https://tauri.app/'>Tauri js</a> and 
+            <a className="text-blue-400 px-1" href='https://www.rust-lang.org/'> Rust</a>.</li>
+          
+        </ul>
       </main>
     </>
   )
